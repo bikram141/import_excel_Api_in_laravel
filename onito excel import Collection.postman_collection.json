@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "bb4c56b0-ee7f-4501-807d-3c8bce1fe040",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25357329",
+		"_collection_link": "https://martian-rocket-527385.postman.co/workspace/New-Team-Workspace~d9c88b38-6212-45e9-997e-8dc61a212cf6/collection/25357329-bb4c56b0-ee7f-4501-807d-3c8bce1fe040?action=share&creator=25357329&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "longest-duration-movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/longest-duration-movies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"longest-duration-movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new-movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tconst\":\"tt000102\",\r\n    \"titleType\":\"Bikram1\",\r\n    \"primaryTitle\":\"bk1\",\r\n    \"runtimeMinutes\":\"121\",\r\n    \"genres\":\"fun1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/new-movie",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"new-movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "top-rated-movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/top-rated-movies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"top-rated-movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "genre-movies-with-subtotals",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/genre-movies-with-subtotals",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"genre-movies-with-subtotals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-runtime-minutes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"genres\":\"Documentary\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/update-runtime-minutes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"update-runtime-minutes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
